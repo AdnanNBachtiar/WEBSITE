@@ -1,0 +1,6 @@
+.halaman a {
+    color: yellow;
+}
+a:hover {
+    color: blue;
+}

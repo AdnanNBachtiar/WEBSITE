@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnan Nuur Bachtiar - 121203003</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+
+  
+<!-- Nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="gambar/anb.png" alt="logo" style="width: 30px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Introduction">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#MyPhoto">My Photo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Comment">Comment</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- container -->
+<div class="container-fluid banner">
+  <div class="container text-center">
+    <h4 class="display-6">Hidup itu mudah, manusianya aja yang ribet</h4>
+    <a href="#Comment">
+      <button class="btn btn-danger btn-lg"> Follow Me</button>
+    </a>
+  </div>
+</div>
+
+<!-- Introduction -->
+<div class="container-fluid Introduction pt-2 pb-2 bg-secondary bg-opacity-25">
+  <div class="container">
+    <h2 class="display-3 text-center" id="Introduction" style="padding: 45px;"> Introduction</h2>
+    <div class="row pt-2">
+      <div class="col">
+        <p style="margin-top: 50px;"> saya adalah seorang mahasiswa, sebagai mahasiswa saya sangat tertarik dengan berbagai hal - hal baru. </p> <br>
+        <p> dengan berkuliah di universitas paramadina saya berharap bisa mendapatkan ilmu - ilmu yang sangat bermanfaat buat saya di didunia kerja nanti</p> <br>
+        <a href="introduction.html" style="text-decoration: none;"> baca selengkapnya >></a>
+      </div>
+      <div class="col text-end">
+        <h3 class="mt-3"><img src="gambar/conten/anb.png" alt="anb" style="width: 50%;"></h3>
+        <p>Adnan Nuur Bachtiar</p>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<!-- my photo -->
+<div class=" container container-fluid">
+    <h2 class="display-3 text-center" id="MyPhoto" style="padding: 45px;"> My Photo</h2>
+<div class="row pt-5 gx-5 gy-5" style="margin: 10px;">
+<!-- Images used to open the lightbox -->
+<div class="container container-fluid">
+  <div class="row pt-5 gx-5 gy-5">
+    <div class="row">
+      <div class="column">
+        <div id="carouselExampleSlidesOnly" class="carousel slide col-12" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="gambar/conten/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" height="100px">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div id="carouselExampleSlidesOnly" class="carousel slide col-12" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="gambar/conten/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" height="100px">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div id="carouselExampleSlidesOnly" class="carousel slide col-12" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="gambar/conten/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="100px">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div id="carouselExampleSlidesOnly" class="carousel slide col-12" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="gambar/conten/5.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="100px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal container container-fluid">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="gambar/conten/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="gambar/conten/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="gambar/conten/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="gambar/conten/4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="gambar/conten/5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="gambar/conten/6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="gambar/conten/7.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="gambar/conten/8.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+
+  </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+<!-- comment -->
+<div class="container-fluid bg-secondary bg-opacity-25">
+  <div class="container">
+    <h2 class="display-3 text-center" style="padding: 20px; margin:10px;"> Comment</h2>
+    <div class="row pt-2">
+      <div class="col">
+
+        <div class="input-group">
+          <input type="text" id="Comment" required class="input">
+          <label for="name" class="input-label"> Email</label>
+        </div>
+
+
+        <div class="input-group">
+          <textarea name="" id="Comment" cols="40" rows="5" required class="input"></textarea>
+          <label for="exampleFormControlTextarea1" class="input-label"> 
+            komentar</label>
+        </div>
+
+<button class="btn btn-danger" type="button" onclick="window.location.reload(true)"> Send</button>
+</div>
+<div class="col">
+  <h3 style="text-align: center;">Follow Us</h3>
+  <div class="text-center" style="margin: px;">
+  <a href="http://web.facebook.com/adnan.n.bachtiar.9"> <img src="gambar/fb-removebg-preview-removebg-preview.png" alt="" style="width: 40px; margin: 10px;"></a>
+  <a href="https://www.instagram.com/adnan_nuur_bachtiar06/"> <img src="gambar/ig-removebg-preview.png" alt="" style="width: 48px; margin: 10px;"></a>
+  <a href="http://twitter.com/NuurAdnan"> <img src="gambar/tw-removebg-preview.png" alt="twiter" width="37" style="margin: 10px;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+  <script src="js/bootstrap.js"></script>
+<script src="animasi.js"></script>
+</body>
+</html>
